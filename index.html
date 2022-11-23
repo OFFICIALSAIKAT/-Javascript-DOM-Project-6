@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-validation</title>
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        #valid{
+            width: 110px;
+        }
+        .msg{
+            color: red;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+       
+        <form action="" onsubmit="return validate()">
+            
+          <label for="">Enter your Email:<input type="text" name="" id="email" placeholder="email@email.com"></label> 
+          <div class="msg" id="emailmsg"></div>
+          <br><br>
+          <label for="">Enter your Number:<input type="number" name="" id="number" placeholder="Enter the number"></label> 
+          <div class="msg" id="numbermsg"></div>
+          <br><br>
+          <label for="">Enter your password:<input type="password" name="" id="password" placeholder="Enter the password"></label> 
+          <div class="msg" id="passwordmsg"></div>
+          <br><br>
+          <button id="valid" type="submit" >Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
